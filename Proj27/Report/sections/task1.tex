@@ -26,6 +26,12 @@ So the idea is:
 But we encounter right away the first problem: the histeresis region appears only with really high numbers of nodes $N \sim 10^5$, which is far too much for my laptop since a fundamental part of the analysis consists in calculating over and over the diameter of a huge network (and multiple times). I wasn't able to replicate the results in time and it seems that the transition to the coexistance of phases is quite sharp, since even at $5\cdot 10^4$ nodes it wasn't showing up.
 In order to widen the coexistance region, the following results were calculated for $\alpha=2$.
 
-The results are in graphs:
-
+The results are in graphs \autoref{fig:ER_Robustness}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{images/ER_GCC.png}
+    \includegraphics[width=0.7\linewidth]{images/ER_Rob.png}
+    \caption{Results on ER networks: average diameter under percolation and $l_{op}$, size of the GCC. No hysteresis can be seen as the critical condition $l_{op}(p_{op})=D(p)$ is hardly ever met if $N<10^5$.}
+    \label{fig:ER_Robustness}
+\end{figure}
 \newpage
